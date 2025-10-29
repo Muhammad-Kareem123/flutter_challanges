@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:yarda/Profile.dart';
 
 import 'package:yarda/SecondScreen.dart';
+import 'package:yarda/newPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home:MyNewPage(),
+       /*Scaffold(
         appBar: AppBar(
           leading: const Icon(Icons.menu),
           title: const Text("Profile Challenge", selectionColor: Colors.black),
@@ -77,7 +80,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarItem(icon: Icon(Icons.account_tree_rounded), label: "Tree"),
           ],
         ),
-      ),
+      ),*/
     );
   }
 }
